@@ -1,0 +1,298 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+@import url(); .poppins-thin {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  position: fixed;
+  z-index: 999;
+  background-color: rgb(240, 240, 240);
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+}
+
+.logo a {
+  color: #6b38cb;
+  font-size: 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navigation ul li {
+  text-decoration: none;
+  list-style: none;
+  display: inline;
+  font-size: 1.1em;
+  font-weight: 500;
+  padding-left: 15px;
+}
+
+.navigation a {
+  text-decoration: none;
+  list-style: none;
+  display: inline;
+  font-size: 1.1em;
+  font-weight: 500;
+  padding-left: 15px;
+}
+
+.navigation a:hover {
+  color: #7568eb
+}
+
+section {
+  padding: 100px 200px;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(../imgs/815993.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.main h2 {
+  color:white;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.main h2 span {
+  color: #a4a4e9;
+  font-size: 3em;
+  font-weight: 600;
+  /* and becaue the span is inline element by default we
+  need to change it to be inline-block to be able to set margin */
+  display: inllie-block;
+  margin-top: 10px;
+}
+
+.main h3 {
+  color: white;
+  font-size: 2em;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+.main-btn {
+  color: white;
+  text-decoration: none;
+  background-color: #6b38cb;
+  font-size: 1.1em;
+  font-weight: 600;
+  /* and if we want to add padding and margin we have to change
+  dispaly to inline-block */
+  display: inline-block;
+  padding: 10px 2em;
+  letter-spacing: 3px;
+  border-radius: 13px; 
+  margin-bottom: 40px;
+  transition: transform 0.7s ease;
+}
+
+.main-btn:hover {
+  background-color: #7568eb;
+  /* padding: 13px 2em; */
+  transform: scale(1.1);
+}
+
+.social-icons a {
+  color:white;
+  font-size: 1.7em;
+  padding-right: 10px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: #6b38cb;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+  scroll-snap-align: start;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card, .contact-card {
+  background-color: white;
+  width: 21em;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+  margin: 15px;
+  padding: 25px;
+  border-radius: 10px;
+  transition: 0.7s ease;
+}
+
+.card:hover, .contact-card:hover {
+  transform: scale(1.1);
+}
+
+.icon, .contact-icon {
+  color: #6b38cb;
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.information h3, .contact-info h3 {
+  color: #6b38cb;
+  text-align: center;
+  margin-bottom: 15px; 
+}
+
+.information p, .contact-info p {
+  color: black;
+  text-align: center;
+}
+
+.projects {
+  background-color: #cdc5ea;
+}
+
+.projects .content {
+  margin-top: 30px;
+}
+
+.project-card {
+  background-color: white;
+  border: 1px solid white;
+  min-height: 14em;
+  width: 23em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  transition: 0.7s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.1);
+}
+
+.project-card:hover .project-img {
+  opacity: 0.9;
+}
+
+.project-img img {
+  width: 100%;
+}
+
+.project-info {
+  padding: 1em;
+}
+
+.project-category {
+  font-size: 0.8em;
+  color: #000;
+}
+
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.more-details {
+  text-decoration: none;
+  color: #6b38cb;
+}
+
+.more-details:hover {
+  color: #7568eb;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #6b38cb;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.footer {
+  background-color: #cdc5ea;
+}
+
+.footer .content {
+  padding: 1em;
+  color: black;
+  justify-content: left;
+}
+
+.footer .content p span {
+  color: #6b38cb;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+/* the next section here we use media quere
+that efficts how phones or smaller screen devices
+will show the website */
+
+@media (max-width:1023px) {
+  header {
+    padding: 1px 20px;
+  }
+  .navigation a {
+    padding-left: 10px;
+  }
+  .title {
+    font-size: 1.8em;
+  }
+  selection {
+    padding: 80px 20px;
+  }
+  .main-content h2 {
+    font-size: 1em;
+  }
+  .main-content h3 {
+    font-size: 1.6em;
+  }
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width:641px){
+  body {
+    font-size: 12px;
+  }
+  .main-content h2{
+    font-size: 0.8em;
+  }
+   .main-content h3 {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width:300px){
+  body{
+    font-size: 10px;
+  }
+}

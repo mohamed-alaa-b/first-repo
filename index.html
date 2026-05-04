@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- this the beging of the first section that call header where is 
+     have the logo and the navigation links -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="">Portfolio</a>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#projects">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- this the end of the first section -->
+<!-- ========================================================================================= -->
+    <!-- the second section where it has the main iformation of the website  -->
+    <section class="main">
+        <div>
+            <h2>hey my name is mohammed i'm <br><span>fullstack develober</span></h1>
+            <h3> i write codes</h2>
+            <a href="#" class="main-btn">Hire Me</a>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-square-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- this the end of the seconde section -->
+<!-- ======================================================================================= -->
+    <!-- this the beging of the third section that named cards where it has
+     more of the site information -->
+    <section class="cards" id="Services">
+        <h2 class="title">Services</h2>
+        <!-- this the parent div that holds all of the cards -->
+        <div class="content">
+            <!-- first card -->
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-terminal"></i>
+                </div>
+                <div class="information">
+                    <div class="coding">
+                        <h3>Coding</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- second card -->
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-brands fa-web-awesome"></i>
+                </div>
+                <div class="information">
+                    <div class="web-design">
+                        <h3>Web Design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- this the end of the second section -->
+<!-- ================================================================================================================ -->
+   <!-- this the beging of the third section where it has the project
+        that i have done -->
+    <section class="projects" id="projects">
+        <!-- ******* and here we see the power of using the same class
+                     to get the same format without needing to write it again
+                     since we are using the same template or section layout
+                     for the entire site
+             ******* -->
+        <h2 class="title">Projects</h2>
+        <div class="content">
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="/imgs/card img/1209505-3840x2160-desktop-4k-glitch-background.jpg" alt="project1">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">
+                         Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Dolor corporis quis,
+                        perferendis perspiciatis sequi assumenda
+                        commodi provident quisquam totam expedita
+                        dicta reprehenderit, voluptas cupiditate
+                        velit incidunt fugit aliquam natus quam. 
+                    </p>
+                    <strong class="project-title">
+                        <span>Project 1</span>
+                        <a href="" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img">
+                    <img src="/imgs/card img/1209505-3840x2160-desktop-4k-glitch-background.jpg" alt="project1">
+                </div>
+                <div class="project-info">
+                    <p class="project-category">
+                         Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Dolor corporis quis,
+                        perferendis perspiciatis sequi assumenda
+                        commodi provident quisquam totam expedita
+                        dicta reprehenderit, voluptas cupiditate
+                        velit incidunt fugit aliquam natus quam. 
+                    </p>
+                    <strong class="project-title">
+                        <span>Project 1</span>
+                        <a href="" class="more-details">More details</a>
+                    </strong>
+                </div>
+            </div>
+        </div>
+    </section>
+ <!-- this the end of the third section -->
+<!-- ================================================================================================================ -->
+ <!-- this the beging of the forth section that contains the contact info -->
+    <section class="contact" id="Contact">
+        <h2 class="title">Contact</h2>
+        <div class="content">
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-info">
+                    <h3>email</h3>
+                    <p>get in touch by email</p>
+                    <a href="">moh.ala013@gmail.com</a>
+                </div>
+            </div>
+
+             <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="contact-info">
+                    <h3>whatsapp</h3>
+                    <p>get in touch by whatsapp</p>
+                    <a href="">01199999999</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- this the end of the forth section -->
+<!-- ================================================================================================================ -->
+ <!-- this the last section  -->
+    <footer class="footer">
+        <div class="content">
+            <p>created by <span>Mohammed Bedewy</span>  &copy; 2025. all rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
